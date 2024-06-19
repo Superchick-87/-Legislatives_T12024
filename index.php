@@ -228,25 +228,12 @@ include(dirname(__FILE__) . '/includes/editeur.php');
             .append("circle")
             .attr('id', 'point')
             .attr('r', 10 + 'px')
-            .attr('class', 'rouge')
+            .attr('class', 'circle')
             .attr("d", geoPath)
             .attr("cx", d => aProjection([d.Long, d.Lat])[0])
             .attr("cy", d => aProjection([d.Long, d.Lat])[1])
 
-          d3.select("svg#map").selectAll("text").data(markers)
-            .enter()
-            .append("g")
-            .append("text")
-            .attr('id', 'loc')
-            .attr('filter', 'url(#solid)')
-            .attr('fill', 'white')
-            .attr('text-anchor', 'middle')
-            // .attr('class', positionTxt(aProjection([d.Long, d.Lat])[0], ''))
-            .text(commune)
-            .attr("x", d => aProjection([d.Long, d.Lat])[0])
-            .attr("y", d => aProjection([d.Long, d.Lat])[1] - 17 + 'px')
-          var communeEncours = document.getElementById(CodeCommune);
-          communeEncours.setAttribute('opacity', '1');
+
         })
 
         // ABSTENTION
