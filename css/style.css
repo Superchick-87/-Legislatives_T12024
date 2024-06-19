@@ -1,0 +1,215 @@
+/*<meta charset="UTF-8">*/
+/*  Imports polices
+  ------------------------------------------------------------------------------------------  */
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display = swap'); 
+  /*  Réinitialisations
+  ------------------------------------------------------------------------------------------  */
+ *{margin:0;
+    padding: 0;
+  }
+  
+html, body {padding:0;outline:0;text-align: center;margin: 0 auto;font-family: 'Roboto', serif;background-color: white;}
+/*section{
+	width: 650px;
+}*/
+h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', serif;}
+h1 {margin: 0px auto 0px;}
+h2 {width: 95%;margin: 10px auto 10px;font-size: 1.4em; font-weight: 300;}
+h3 {margin: 10px auto 10px;}
+h4{
+	font-size: 1.2em;
+	font-weight: 300;
+	margin: 20px auto 10px;
+}
+p{
+	margin: 0px auto;
+	width: 80%;	
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 35px solid #fffffffa;
+    border-right: 35px solid #fffffffa;
+    border-bottom: 60px solid #0000002e;
+	margin: 20px auto;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScvPgogIDxwYXRoIGQ9J00tMSwxIGwyLC0yCiAgICAgICAgICAgTTAsMTAgbDEwLC0xMAogICAgICAgICAgIE05LDExIGwyLC0yJyBzdHJva2U9J2JsYWNrJyBzdHJva2Utd2lkdGg9JzInLz4KPC9zdmc+"); background-repeat: repeat;
+}
+.square {
+  height: 60px;
+  width: 60px;
+  margin: 20px auto;
+ background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScvPgogIDxwYXRoIGQ9J00tMSwxIGwyLC0yCiAgICAgICAgICAgTTAsMTAgbDEwLC0xMAogICAgICAgICAgIE05LDExIGwyLC0yJyBzdHJva2U9J2JsYWNrJyBzdHJva2Utd2lkdGg9JzInLz4KPC9zdmc+"); background-repeat: repeat;
+}
+.pastille{
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	margin: 0px 0px 5px 0px;
+	/*border-radius: 50%;*/
+}
+.barre{
+	display: inline-flex;
+    width: 120px;
+    height: 15px;
+	margin: 5px 0px 5px 0px;
+	/*border-radius: 50%;*/
+}
+.mapCantonOff{
+	fill:#c6c6c6;
+	stroke: white;
+	opacity: 0.5;
+}
+.mapCantonOn{
+	fill:#999898;
+	stroke: white;
+}
+.none{
+	fill:none;
+	stroke: white;
+}
+.gris{background:#cecece;fill:#cecece;}
+
+.grise{background:#999898;fill:#999898;}
+.hach_grise{fill : url(#hach_grise);stroke: white;}
+
+.bleuemarine{background:#14387F;fill:#14387F;}
+.hach_bleuemarine{fill : url(#hach_bleuemarine);stroke: white;}
+
+.bleue{background:#0771B8;fill:#0771B8;}
+.hach_bleue{fill : url(#hach_bleue);stroke: white;}
+
+.bleueclaire{background:#00B1EB;fill:#00B1EB;}
+.hach_bleueclaire{fill : url(#hach_bleueclaire);stroke: white;}
+
+.verte{background:#95C11F;fill:#95C11F;}
+.hach_verte{fill : url(#hach_verte);stroke: white;}
+
+.rose{background:#ff89ff;fill:#ff89ff;}
+.hach_rose{fill : url(#hach_rose);stroke: white;}
+
+.orange{background:#FBBA00;fill:#FBBA00;}
+.hach_orange{fill : url(#hach_orange);stroke: white;}
+
+.rouge{background:#E30613;fill:#cd0000;}
+.hach_rouge{fill : url(#hach_rouge);stroke: white;}
+
+.violette{background:#B60F80;fill:#B60F80;}
+.hach_violette{fill : url(#hach_violette);stroke: white;}
+
+.marron{background:#654519;fill:#654519;}
+.hach_marron{fill : url(#hach_marron);stroke: white;}
+
+.noir{
+	fill:black;
+}
+.rouge{
+	fill:red;
+	stroke: white;
+	stroke-width: 3;
+}
+.candidats{
+	font-size: 0.9em;
+	font-weight: 300;
+	width: 160px;
+	margin: 0px auto 10px;
+}
+.intro{
+	font-size: 0.9em;
+	font-weight: 300;
+	width: 160px;
+	margin: 0px auto 10px;
+}
+.blocListe{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.blocListe_center{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.liste{
+/* display:flex;
+ margin:3px 0px 0px 25%;*/
+}
+.loc{
+	font-size: 17px;
+	text-anchor: middle;
+	font-weight: bold;
+}
+.locR{
+	font-size: 17px;
+	text-anchor: start;
+	font-weight: bold;
+}
+.alerte{
+	font-size: 2.5em;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.visuel{
+	width: 400px;
+}
+.visuelBas{
+	display:block;
+	margin: 0px auto;
+}
+.consigne {
+    font-size: 1em;
+	font-weight: 300;
+	line-height: 1.6em;
+}
+/*  Styles
+  ------------------------------------------------------------------------------------------  */
+/*legend{margin-top: 5px;}*/
+hr{border-top: 1px dotted black;width: 50%;margin: 10px auto 10px;}
+/*img{width: 280px; margin: 20px auto;}*/
+.declHaut{margin-top: 20px;}
+.recherche{background-color: #f7a600;padding: 0px 0px 10px 0px;border-radius: 5px;width: 95%;margin: 5px auto 0px;justify-content: center;flex-wrap: wrap;flex-direction: row;padding: 5px 5px 5px 5px;}
+/*.flex{display: flex;flex-wrap: nowrap;justify-content: center;}*/
+/*.justifGauche{width: 70%;text-align: left;margin: auto 2%;}*/
+/*.justifDroite{width: 30%;text-align: right;margin: 0% auto;line-height: unset;word-wrap: break-word;}*/
+
+/*  Text ------------------------------------------------------------------------------  */
+.chiffresBig{
+	font-size: 1.9em;
+	font-weight: 100;
+	font-stretch: condensed;
+	margin: 0px auto;
+}
+.titre{font-size: 2em;line-height: 1em;margin-bottom: 8px;}
+/*.libele{font-weight: 400;font-size: 1em;line-height: 0.9em;margin-top: 2px;}*/
+/*.maire{font-size: 1.5em;line-height: 1.5em;}*/
+.txtCourant{font-size: 1em;font-weight: 300;}
+.legend{font-size: 1em;font-style: italic;font-weight: 300;}
+/*  Fin Text ------------------------------------------------------------------------------  */
+
+/*  Formulaire ------------------------------------------------------------------------------  */
+button{width: 150px;height: 30px;text-align: center;background-color: #262424cc;border: 2px solid rgb(60, 57, 57);color: #FFF;border-radius: 5px;font-size: 15px;margin: 5px auto 10px;}
+button:hover {background-color: rgba(255,255,255,0.8);border: 2px solid rgb(60, 57, 57);color: #262424cc;}
+input{font-size: 0.9rem;width: 300px;height: 25px;background-color: #4e4e4e;border: solid 1px #000;border-radius: 5px;margin: 5px auto; padding: 0px 5px 0px 5px;color:white;text-align: center;}
+/*  Fin Formulaire ------------------------------------------------------------------------------  */
+
+footer{font-size: 0.9em;height:20px;margin-top: 10px;background-repeat:no-repeat;background-position:center;}
+
+
+@media only screen and (max-device-width:450px){
+  	section{
+  	width: 98%;
+  	margin: 0px auto;
+  	}
+  	input{
+  		width: 250px;
+	}
+	.visuel{
+		width: 98%;
+	}
+	.visuelBas{
+		display:none;
+	}
+}
