@@ -111,6 +111,10 @@ p {
 	stroke: white;
 }
 
+.abs {
+	background: rgb(134, 164, 158);
+}
+
 .gris {
 	background: #cecece;
 	fill: #cecece;
@@ -323,7 +327,7 @@ hr {
 
 /*  Text ------------------------------------------------------------------------------  */
 .chiffresBig {
-	font-size: 1.9em;
+	font-size: 1.3em;
 	font-weight: 100;
 	font-stretch: condensed;
 	margin: 0px auto;
@@ -342,8 +346,14 @@ hr {
 	font-weight: 300;
 }
 
-.legend {
-	font-size: 1em;
+legend {
+	width: 80%;
+	margin: 0px auto;
+}
+
+.legend,
+legend {
+	font-size: 0.9em;
 	font-style: italic;
 	font-weight: 300;
 }

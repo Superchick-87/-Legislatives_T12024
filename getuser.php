@@ -39,12 +39,9 @@ if (($data['Commune'] | $data['Dep']) == NULL) {
     <div class="hautLigne1 declHaut">
         <div id="Commune" class="titre">' . $data['Commune'] . '
         </div>
-        <p class="txtCourant">Les habitants de la commune votent</br>dans la <b>' . $data['Circo'] . '</b> qui compte ' . number_format($data['PopCirco'], 0, ',', ' ') . ' habitants.</p>
+        <p class="txtCourant">Les habitants de la commune votent</br>dans la <b>' . $data['Circo'] . '</b> qui compte ' . number_format($data['Inscrits'], 0, ',', ' ') . ' inscrits.</p>
        <br>
-       <p class="txtCourant">En 2017, l\'élection dans la circonscription</br>avait été remportée par <b>' . justifListeBis($data['Sortants']) . '</b>.</p><br>
-        <div class="chiffresBig">' . $data['Inscrits'] . '
-        </div>
-        <div class="candidats">Inscrits</div>
+       <p class="txtCourant">Le dernier scrutin dans la circonscription</br>a été remporté par <b>' . justifListeBis($data['Sortants']) . '</b>.</p><br>
         <h2>L\'abstention au 1<sup>er</sup> tour</h2>
         <div class="blocListe_center">' . justifListe($data['Abstention_commune']) . '' . justifListe($data['Abstention_circo']) . '
         </div>
@@ -62,6 +59,11 @@ if (($data['Commune'] | $data['Dep']) == NULL) {
                           <feMergeNode in="bg"/>
                           <feMergeNode in="SourceGraphic"/>
                         </feMerge>
+                      </filter>
+                      <filter id="shadow" x="-20" y="-20" height="150" width="150" >
+                        <feOffset result="offset" in="SourceAlpha" dx="0" dy="0" />
+                        <feGaussianBlur result="blur" in="offset" stdDeviation="5" />
+                        <feBlend in="SourceGraphic" in2="blur" mode="normal" />
                       </filter>
                       <pattern id="hach_grise" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
                         <line x1="6" y1="0" x2="6" y2="50" stroke="#999898" stroke-width="6" />
@@ -99,15 +101,16 @@ if (($data['Commune'] | $data['Dep']) == NULL) {
         </div>
 
     </div>
+    <legend>Les couleurs correspondent aux nuances politiques des deux candidats arrivés en tête dans la commune.</legend>
     <hr>
     <h2  id="elus" style="width:95%;">Elu(e) au premier tour</h2>
     <div id="elus_C" class="blocListe">' . justifListe($data['Elu_au_premier_tour']) . '</div>
     
-    <h2 id="qualifies" style="width:95%;">Les candidats en lice au second tour (19 juin 2022)</h2>
+    <h2 id="qualifies" style="width:95%;">Les candidats en lice au second tour (7 juillet 2024)</h2>
     <div id="qualifies_C" class="blocListe">' . justifListe($data['Qualifies']) . '</div>
     <hr>
     
-    <h2 id="NonQualifies" style="width:95%;">Éliminés au 1<sup>er</sup> tour (12 juin 2022)</h2>
+    <h2 id="NonQualifies" style="width:95%;">Éliminés au 1<sup>er</sup> tour (30 juin 2024)</h2>
     <div id="NonQualifies_C" class="blocListe">' . justifListe($data['Non_qualifies']) . '</div>
 
     <img class="visuelBas" src="css/images/visuelBas.png">';

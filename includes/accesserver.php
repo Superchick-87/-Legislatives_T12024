@@ -1,11 +1,11 @@
 <?php
 
 // local
-// $database = "Consultations";
-// $table = 'Legislatives_T12024';
-// $serveur = "localhost";
-// $login = "root";
-// $pass = "root";
+$database = "Consultations";
+$table = 'Legislatives_T12024';
+$serveur = "localhost";
+$login = "root";
+$pass = "root";
 
 // superchick !
 // $database="superchicj955";
@@ -16,8 +16,8 @@
 
 
 // Infographie !
-$database = "info_prod";
-$table = 'Legislatives_T12024';
-$serveur = "localhost";
-$login = "info_prod";
-$pass = "vtN6wdvp4ZE7";
+// $database = "info_prod";
+// $table = 'Legislatives_T12024';
+// $serveur = "localhost";
+// $login = "info_prod";
+// $pass = "vtN6wdvp4ZE7";

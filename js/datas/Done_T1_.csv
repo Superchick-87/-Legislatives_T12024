@@ -170,7 +170,7 @@ Dep.,code,ColorT1,Color_hachT1,Abs_Commune%
 16,16408,rose,hach_bleue,21.6
 16,16420,rose,hach_rouge,28.7
 16,16424,rose,hach_rouge,18.1
-16,16001,rose,hach_rouge,
+16,16001,#N/A,#N/A,#N/A
 16,16003,rouge,hach_rose,0.7
 16,16005,orange,hach_rouge,27.3
 16,16007,rose,hach_bleueclaire,24
@@ -589,7 +589,7 @@ Dep.,code,ColorT1,Color_hachT1,Abs_Commune%
 17,17477,rouge,hach_rose,14.1
 17,17478,rouge,hach_rose,19.9
 17,17481,rouge,hach_grise,3.8
-17,17002,grise,hach_orange,
+17,17002,#N/A,#N/A,#N/A
 17,17005,rouge,hach_bleue,33.1
 17,17006,rouge,hach_bleue,33.3
 17,17015,rouge,hach_bleuemarine,5.9
@@ -1019,7 +1019,7 @@ Dep.,code,ColorT1,Color_hachT1,Abs_Commune%
 24,24572,orange,hach_bleue,
 24,24581,orange,hach_bleue,
 24,24584,orange,hach_bleue,
-24,24001,bleue,hach_rose,
+24,24001,#N/A,#N/A,#N/A
 24,24002,bleue,hach_rose,
 24,24007,bleue,hach_rose,
 24,24008,bleue,hach_rose,
@@ -2528,7 +2528,7 @@ Dep.,code,ColorT1,Color_hachT1,Abs_Commune%
 64,64525,rouge,hach_bleue,26.9
 64,64549,orange,hach_rose,9.5
 64,64550,grise,hach_orange,27.9
-64,64001,rose,hach_rouge,
+64,64001,#N/A,#N/A,#N/A
 64,64002,grise,hach_bleuemarine,8.3
 64,64021,grise,hach_orange,5.3
 64,64023,violette,hach_bleue,3.4

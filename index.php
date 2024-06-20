@@ -36,7 +36,7 @@ include(dirname(__FILE__) . '/includes/editeur.php');
   <br>
   <div id="comment">
     <h4>Comment ça marche</h4>
-    <p class="txtCourant">Saisissez le nom d’une commune située dans la zone de diffusion de votre quotidien <b>"<?php echo personalisation($_GET['Editeur']); ?>"</b> dans le champ de recherche ci-dessus pour connaître candidats en lice au second tour des élections législatives (19 juin 2022).</p>
+    <p class="txtCourant">Saisissez le nom d’une commune dans le champ de recherche ci-dessus pour consulter les résultats du premier tour et découvrir les candidats en lice au second tour des élections législatives 2024.</p>
     <hr>
     <img id="visuel" class="visuel" src="css/images/visuel.png">
     <hr>
@@ -220,13 +220,14 @@ include(dirname(__FILE__) . '/includes/editeur.php');
             .attr("d", geoPath)
             .style('fill', 'none')
             .style('stroke', 'black')
-            .style('stroke-width', '2')
+            .style('stroke-width', '1')
             .style('stroke-opacity', '1')
 
           d3.select("svg#map").selectAll("circle").data(markers)
             .enter()
             .append("circle")
             .attr('id', 'point')
+            .attr('filter', 'url(#shadow)')
             .attr('r', 10 + 'px')
             .attr('class', 'circle')
             .attr("d", geoPath)
