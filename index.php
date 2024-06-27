@@ -176,6 +176,22 @@ include(dirname(__FILE__) . '/includes/editeur.php');
 
         var geoPath = d3.geoPath().projection(aProjection);
 
+        /**
+         *@ Afficher pour générer la carte print
+         */
+        // var print = d3.select("svg#map").attr("width", w).attr("height", h).selectAll("g").data(data.features)
+        //   .enter()
+        //   .append('g')
+        //   .attr('id', d => d.properties.code)
+        //   .attr("opacity", "1")
+        //   .append("path")
+        //   .attr("d", geoPath)
+        //   .style('stroke', 'white')
+        //   .attr("class", d => d.properties.ColorT1);
+        /**
+         *@Fin Afficher pour générer la carte print
+         */
+
         var toto = d3.select("svg#map").attr("width", w).attr("height", h).selectAll("g").data(data.features)
           .enter()
           .append('g')
@@ -244,8 +260,8 @@ include(dirname(__FILE__) . '/includes/editeur.php');
         console.log(min * 2, max)
 
         var areaScale = d3.scaleLinear()
-          .domain([min, max])
-          .range(['white', '#2D1500']);
+          .domain([0, 33])
+          .range(['white', '#47746C']);
         //CARTE ABS
         // var mm =
         d3.select('svg#Absmap')

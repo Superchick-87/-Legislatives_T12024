@@ -45,7 +45,7 @@ if (($data['Commune'] | $data['Dep']) == NULL) {
         <h2>L\'abstention au 1<sup>er</sup> tour</h2>
         <div class="blocListe_center">' . justifListe($data['Abstention_commune']) . '' . justifListe($data['Abstention_circo']) . '
         </div>
-       <div style="display:none;" id="DDD" style="margin:0px auto;">
+       <div style="display:block;" id="DDD" style="margin:0px auto;">
             <svg id="Absmap">
         </div>
         <div style="display:none;" id="deptLabstention"></div>    
