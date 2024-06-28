@@ -39,7 +39,8 @@ if (($data['Commune'] | $data['Dep']) == NULL) {
     <div class="hautLigne1 declHaut">
         <div id="Commune" class="titre">' . $data['Commune'] . '
         </div>
-        <p class="txtCourant">Les habitants de la commune votent</br>dans la <b>' . $data['Circo'] . '</b> qui compte ' . number_format($data['Inscrits'], 0, ',', ' ') . ' inscrits.</p>
+       
+        <p class="txtCourant">Les habitants de la commune votent</br>dans la <b><a href=" '. $data['link'] . '" target="_blank">' . $data['Circo'] . '</a></b> qui compte ' . number_format($data['Inscrits'], 0, ',', ' ') . ' inscrits.</p>
        <br>
        <p class="txtCourant">Le dernier scrutin dans la circonscription</br>a été remporté par <b>' . justifListeBis($data['Sortants']) . '</b>.</p><br>
         <h2>L\'abstention au 1<sup>er</sup> tour</h2>
